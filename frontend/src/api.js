@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:3000/api/recipes';
+const API_BASE = 'https://recipe-manager-backend-7akd.onrender.com';
 
 export const fetchRecipes = () => axios.get(API_BASE);
 export const fetchRecipeById = (id) => axios.get(`${API_BASE}/${id}`);
